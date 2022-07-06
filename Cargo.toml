@@ -1,0 +1,24 @@
+[package]
+name = "Test_Chaum_Pedersen"
+version = "0.1.0"
+authors = ["Zakwan <zakwanj@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mod_exp = "1.0.1"
+itertools = "0.10.0"
+regex = "1.4.3"
+
+[[bin]]
+name = "main"
+path = "src/mains.rs"
+
+[[bin]]
+name = "client"
+path = "src/client.rs"
+
+[[bin]]
+name = "server"
+path = "src/server.rs"
